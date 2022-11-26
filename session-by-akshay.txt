@@ -1,0 +1,27 @@
+Step 1: Choosing Proper image while using
+#Official Docker Image
+#Verified Publisher
+#Public- anyone can upload these images in to docker.
+#We need to choose minimal base image
+#We need to specify the tags when we build the docker
+#To make sure out application does not effect with upgrades of chosen build we need to specify tag as well which is setup with hash id.
+
+Step 2 : Best practices to write docker file
+
+#We need to use labels
+#We need to define list user previlleges, we have to use that user to run out containers but not the root user.
+  # Run addgroup -S myapp &the & adduser -S app-user -G myapp
+#Use Copy Instead of ADD command
+    #When we use ADD we can mention url in docker file and co
+    #When we use Copy command to avoid any secuty issue
+    #Don't leave sensitive information in docker images. User varaibles instead of direct vaues.
+    #Adding the entire git repo
+    #WE can use dockerignore file to make sure the files should not upload to docker image/
+    #Should prefere multistage build
+    #User static code analysisvs
+    #Verify and sign images to mitigate MITM attacks
+      it will help you to avoid downloading unautorized images
+     
+  Step3 : How to find docker vulanrabilities
+      #
+      
