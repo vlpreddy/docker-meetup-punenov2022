@@ -23,5 +23,5 @@ Step 2 : Best practices to write docker file
       it will help you to avoid downloading unautorized images
      
   Step3 : How to find docker vulanrabilities
-      #
-      
+      #trivy tool
+      #trivy image imagename
